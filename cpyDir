@@ -1,0 +1,3 @@
+curDir=`pwd`'/'
+newDir='/home/'`whoami`'/workFrom'`date +%Y-%m-%d`
+sudo rsync -a $curDir $newDir  --include "*/" --include "*.jpeg" --exclude "*"
